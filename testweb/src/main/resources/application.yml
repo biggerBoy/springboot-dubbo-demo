@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: dubbo-xfz
+server:
+  port: 8081 #这个是启动服务要占用额端口，Tomcat默认8080
+dubbo:
+  application:
+    id: dubbo-xfz
+    name: dubbo-xfz
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 12345
+  #zookeeper注册中心的地址 address是协议+IP：端口
+  registry:
+    id: my-reg
+    address: zookeeper://127.0.0.1:2181
